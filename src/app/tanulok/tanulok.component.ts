@@ -14,6 +14,7 @@ export class TanulokComponent {
 
   ngOnInit(): void {
     this.getStudents();
+    this.getScores();
   }
 
   getStudents() {
@@ -32,10 +33,10 @@ export class TanulokComponent {
 
   getScores() {
     
-    this.api.getStudents().subscribe({
+    this.api.getScores().subscribe({
       next: (scores) => {
         console.log(scores)
-        this.students = scores;
+        this.scores = scores;
       },
       error: (err) => {
         console.log('Hiba! A REST API elérése sikertelen!')

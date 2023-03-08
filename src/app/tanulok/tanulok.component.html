@@ -1,1 +1,37 @@
-<p>tanulok works!</p>
+<h3>Diákok Adatai</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Név</th>
+            <th>Életkor</th>
+            <th>Osztály</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let students of students">
+            <td>{{students.id}}</td>
+            <td>{{students.name}}</td>
+            <td>{{students.gender}}</td>
+            <td>{{students.group}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Diákok Pontjai</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Pontszám</th>
+            <th>DiákID</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let scores of scores">
+            <td>{{scores.id}}</td>
+            <td>{{scores.score}}</td>
+            <td>{{scores.studentId}}</td>
+        </tr>
+    </tbody>
+</table>
