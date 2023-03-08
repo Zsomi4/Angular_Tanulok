@@ -1,3 +1,12 @@
+/*
+* File: tanulok.component.ts
+* Author: Gubis Zsombor Dániel
+* Copyright: 2023, Gubis Zsombor Dániel
+* Group: Szoft_II_N
+* Date: 2023-03-08
+* Github: https://github.com/zsomi4/
+* Licenc: GNU GPL
+*/
 import { Component } from '@angular/core';
 import { ApiService } from '../shared/api.service';
 
